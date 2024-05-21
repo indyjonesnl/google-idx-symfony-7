@@ -1,0 +1,83 @@
+{
+    "name": "indyjonesnl/google-idx-symfony-7",
+    "description": "Symfony template for Google's Project IDX",
+    "type": "project",
+    "require": {
+        "symfony/flex": "^2.4",
+        "symfony/runtime": "*",
+        "symfony/yaml": "*",
+        "symfony/dotenv": "*",
+        "symfony/asset": "*",
+        "symfony/asset-mapper": "*",
+        "symfony/doctrine-messenger": "*",
+        "symfony/expression-language": "*",
+        "symfony/form": "*",
+        "symfony/http-client": "*",
+        "symfony/intl": "*",
+        "symfony/mailer": "*",
+        "symfony/mime": "*",
+        "symfony/monolog-bundle": "^3.0",
+        "symfony/notifier": "*",
+        "doctrine/dbal": "^3",
+        "doctrine/doctrine-bundle": "^2.12",
+        "doctrine/doctrine-migrations-bundle": "^3.3",
+        "doctrine/orm": "^3.1",
+        "symfony/process": "*",
+        "symfony/security-bundle": "*",
+        "phpdocumentor/reflection-docblock": "^5.4",
+        "phpstan/phpdoc-parser": "^1.29",
+        "symfony/property-access": "*",
+        "symfony/property-info": "*",
+        "symfony/serializer": "*",
+        "symfony/stimulus-bundle": "^2.17",
+        "symfony/string": "*",
+        "symfony/translation": "*",
+        "symfony/twig-bundle": "*",
+        "twig/extra-bundle": "^2.12|^3.0",
+        "twig/twig": "^2.12|^3.0",
+        "symfony/ux-turbo": "^2.17",
+        "symfony/validator": "*",
+        "symfony/web-link": "*"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^7.0",
+        "symfony/debug-bundle": "^7.0",
+        "symfony/stopwatch": "^7.0",
+        "symfony/web-profiler-bundle": "^7.0",
+        "symfony/maker-bundle": "^1.0",
+        "phpunit/phpunit": "^9.5",
+        "symfony/browser-kit": "^7.0",
+        "symfony/css-selector": "^7.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/flex": true,
+            "symfony/runtime": true
+        },
+        "sort-packages": true
+    },
+    "scripts": {
+        "auto-scripts": {
+            "cache:clear": "symfony-cmd",
+            "assets:install %PUBLIC_DIR%": "symfony-cmd",
+            "importmap:install": "symfony-cmd"
+        }
+    },
+    "extra": {
+        "symfony": {
+            "allow-contrib": true,
+            "require": "7.0.*"
+        }
+    }
+}
